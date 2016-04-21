@@ -1,14 +1,44 @@
 .enter {
-	.enter-header {
-		width: 100%;
-		img {
-			width: 100%;
+	.headline {
+		margin: 30px 0 20px 0;
+		h2 {
+			font-size: 3.6rem;
+			color: $red;
+			line-height: 1;
+			text-transform: uppercase;
+			padding: 0;
+			&:last-child {
+				font-size: 4.2rem;
+			}
 		}
 	}
 	.checkboxes {
-		padding: 20px 0;
+		padding: 0 0 20px 0;
 		text-align: center;
 		font-size: 2.3rem;
+		.width-quarter {
+			&.red-bg {
+				background-color: $red;
+				img {
+					padding: 4px;
+				}
+				label {
+					color: $white;
+				}
+			}
+			
+		}
+		label, input {
+			font-size: 2.3rem;
+			color: $red;
+			text-transform: uppercase;
+			font-family: "AlternateGotNo3D", sans-serif;
+			font-size: 2.3rem;
+		}
+		input {
+			margin: 0 12px 0 0;
+			vertical-align: auto;
+		}
 		.group {
 			padding: 0 12px;
 			&:nth-child(odd) {
@@ -27,47 +57,60 @@
 				}
 			}
 		}
-		input {
-			background-color: $darkgrey;
-			margin: 0 60px 0 20px;
-			display: inline-block;
-		}
+	}
+	.rooms {
+		font-size: 0;
 	}
 	#your-information-section {
-		border-top: 2px solid #dcdcdc;
-		width: 90%;
+		width: 100%;
+		max-width: 500px;
 		text-align: center;
-		font-size: 2.3rem;
 		margin: 0 auto;
+		h2 {
+			font-size: 4.3rem;
+			color: $red;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+
+		}
 		.fields {
 			margin: 0 auto;
-			max-width: 570px;
+			max-width: 340px;
 			width: 100%;
+			font-size: 0;
 			text-align: left;
 			label {
-				width: 180px;
+				width: 50%;
 				display: inline-block;
+				font-size: 2.3rem;
+				font-family: "AlternateGotNo3D", sans-serif;
+				text-transform: uppercase;
 			}
 			input {
 				height: 28px;
+				display: inline-block;
 				font-size: 2rem;
-				background-color: $lightgrey;
+				margin-bottom: 16px;
+				background-color: #dcdcdc;
 				border: 1px solid #989898;
-				width: 162px;
+				width: 50%;
 				&[name="age"] {
 					width: 50px;
 				}
 				&#postalcode1 {
 					width: 50px;
+					margin-right: 10px;
 				}
 				&#postalcode2 {
 					width: 50px;
 				}
 				&#phone1 {
 					width: 50px;
+					margin-right: 10px;
 				}
 				&#phone2 {
 					width: 50px;
+					margin-right: 10px;
 				}
 				&#phone3 {
 					width: 50px;
@@ -81,12 +124,16 @@
 			margin-top: 40px;
 			font-size: 1.6rem;
 			h3 {
-				font-size: 2.8rem;
+				font-size: 4.3rem;
 				text-align: center;
+				text-transform: uppercase;
+				color: $red;
 			}
 			label {
 				width: auto;
+				text-transform: none;
 				margin-top: -14px;
+				font-size: 2rem;
 				vertical-align: middle;
 				a {
 					color: $black;
@@ -95,8 +142,14 @@
 			}
 		}
 		#optin-section {
-			margin-top: -14px;
-			font-size: 1.6rem;
+			h3 {
+				font-size: 4.3rem;
+				text-align: center;
+				text-transform: uppercase;
+				color: $red;
+			}
+			font-family: "AlternateGotNo3D", sans-serif;
+			font-size: 2rem;
 			margin-bottom: 40px;
 			#permission {
 				top: 6px;
@@ -109,18 +162,16 @@
 		}
 	}
 	#entry-button {
-		background-color: $black;
-		border: 2px solid $lightgrey;
+		background-color: $red;
+		// border: 2px solid $lightgrey;
 		font-size: 2.4rem;
 		text-transform: uppercase;
-		font-family: "futura", sans-serif;
+		font-family: "AlternateGotNo3D", sans-serif;
 		color: $white;
 		display: block;
-		margin: 0 auto;
-		margin-top: 20px;
-		width: 260px;
+		margin: 20px auto;
 		text-align: center;
-		padding: 0px 24px 2px;
+		padding: 16px 112px 8px;
 	}
 	p {
 		color: $darkgrey;

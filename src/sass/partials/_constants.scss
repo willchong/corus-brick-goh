@@ -1,7 +1,9 @@
-$lightgrey: #e0deda;
-$darkgrey: #505050;
-$black: #151515;
+$lightgrey: #a5a5a5;
+$darkgrey: #556970;
+$black: #000;
 $white: #fff;
+$red: #ee1c2e;
+$darkred: #5f0b12;
 
  @mixin breakpoint($point) {
   @if $point == xxsmall {

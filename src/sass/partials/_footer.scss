@@ -1,10 +1,17 @@
 footer {
 	text-align: center;
 	padding-bottom: 50px;
+	.divider {
+		margin: 0 auto;
+		width: 90%;
+		height: 1px;
+		background-color: $black;
+	}
 	.legal {
 		font-size: 0.8rem;
 		font-family: "Arial", sans-serif;
-		margin: 20px 0;
+		margin: 20px auto;
+		width: 80%;
 	}
 	.logos {
 		a {
@@ -14,8 +21,17 @@ footer {
 				}
 			}
 		}
-		img {
-			padding: 0 32px;
+	}
+	.links {
+		ul {
+			margin-top: 20px;
+			li {
+				display: inline;
+				margin: 0 40px;
+				font-size: 1.4rem;
+				text-decoration: underline;
+				color: $lightgrey;
+			}
 		}
 	}
 }

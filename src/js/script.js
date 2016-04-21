@@ -67,7 +67,6 @@ $(document).ready(function() {
 	}
 
 
-
 });
 
 $('.products-carousel .prev').on('click', function() {
@@ -82,7 +81,12 @@ $('.products-carousel .next').on('click', function() {
 
 });
 
+$('.checkboxes input[type="radio"]').on('click', function(){
 
+	$('.checkboxes input[type="radio"]').parent().removeClass('red-bg');
+	$(this).parent().addClass('red-bg');
+
+});
 
 // $(window).on('resize', function() {
 
