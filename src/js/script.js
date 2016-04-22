@@ -30,9 +30,15 @@ function getQueryVariable(variable)
 
 $(document).ready(function() {
 
-	$('.products-carousel').slick({
-		slide: 'img',
-		arrows: false
+	var startSlide = $('#startslide').index('.width-quarter');
+
+	$('.rooms').slick({
+		slide: '.width-quarter',
+		slidesToShow: 4,
+		arrows: false,
+		slidesToScroll: 4,
+		initialSlide: startSlide,
+		infinite: false
 	});
 	
 	$(".nav-button").click(function(e) {
@@ -69,22 +75,31 @@ $(document).ready(function() {
 
 });
 
-$('.products-carousel .prev').on('click', function() {
+$('.controls .prev').on('click', function() {
 
-	$('.products-carousel').slick('slickPrev');
+	$('.rooms').slick('slickPrev');
+
+});
+
+$('.controls .next').on('click', function() {
+
+	$('.rooms').slick('slickNext');
 
 });
 
-$('.products-carousel .next').on('click', function() {
-
-	$('.products-carousel').slick('slickNext');
-
-});
+$('.checkboxes input[type="radio"]').attr('disabled', true);
+$('.checkboxes .thisweek input[type="radio"]').attr('disabled', false);
 
 $('.checkboxes input[type="radio"]').on('click', function(){
 
-	$('.checkboxes input[type="radio"]').parent().removeClass('red-bg');
-	$(this).parent().addClass('red-bg');
+	if ($(this).prop("checked", true)) {
+		if ($(this).parent().hasClass('thisweek')) {
+			$('.checkboxes input[type="radio"]').parent().removeClass('red-bg');
+			$(this).parent().addClass('red-bg');
+		}
+	} else {
+		$('.checkboxes input[type="radio"]').parent().removeClass('red-bg');
+	}
 
 });
 

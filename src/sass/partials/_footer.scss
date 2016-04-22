@@ -18,6 +18,9 @@ footer {
 			&:first-child {
 				img {
 					border-right: 2px solid #adadad;
+					@include breakpoint(xxsmall) {
+						border-right: none;
+					}
 				}
 			}
 		}
