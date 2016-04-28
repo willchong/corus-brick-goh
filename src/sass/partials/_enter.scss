@@ -11,6 +11,9 @@
 				font-size: 4.2rem;
 			}
 		}
+		h3 {
+			text-align: center;
+		}
 	}
 	.checkboxes {
 		padding: 0 0 20px 0;
@@ -89,7 +92,7 @@
 				font-family: "AlternateGotNo3D", sans-serif;
 				text-transform: uppercase;
 			}
-			input {
+			input, select {
 				height: 28px;
 				display: inline-block;
 				font-size: 2rem;

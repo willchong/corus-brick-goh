@@ -87,16 +87,16 @@ $('.controls .next').on('click', function() {
 
 });
 
-$('.checkboxes input[type="radio"]').attr('disabled', true);
-$('.checkboxes .thisweek input[type="radio"]').attr('disabled', false);
+// $('.checkboxes input[type="radio"]').attr('disabled', true);
+// $('.checkboxes .thisweek input[type="radio"]').attr('disabled', false);
 
 $('.checkboxes input[type="radio"]').on('click', function(){
 
 	if ($(this).prop("checked", true)) {
-		if ($(this).parent().hasClass('thisweek')) {
+		// if ($(this).parent().hasClass('thisweek')) {
 			$('.checkboxes input[type="radio"]').parent().removeClass('red-bg');
 			$(this).parent().addClass('red-bg');
-		}
+		// }
 	} else {
 		$('.checkboxes input[type="radio"]').parent().removeClass('red-bg');
 	}
