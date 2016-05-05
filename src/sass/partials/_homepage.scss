@@ -96,7 +96,21 @@
 			}		
 		}
 		label {
+			display: none;
 			opacity: 1;
+		}
+		input {
+			display:none;
+		}
+	}
+	&.checkboxes {
+		.width-quarter {
+			label {
+				display: inline;
+			}
+			input {
+				display: inline;
+			}
 		}
 	}
 }
